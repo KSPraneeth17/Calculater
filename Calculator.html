@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Calculator (Level-2,Task-1) | Oasis Infobyte</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<script>
+	function calcNumbers(result){
+		form.displayResult.value=form.displayResult.value+result;
+		
+	}
+	</script>
+	<div class="container">
+		<form name="form">
+		<div class="display">
+			<input type="text" placeholder="0" name="displayResult" />
+		</div>
+			<div class="buttons">
+			  <div class="row">
+				<input type="button" name="a7" value="7" onClick="calcNumbers(a7.value)">
+				  <input type="button" name="a8" value="8" onClick="calcNumbers(a8.value)">
+				  <input type="button" name="a9" value="9" onClick="calcNumbers(a9.value)">
+				  <input type="button" name="adda" value="+" onClick="calcNumbers(adda.value)">
+				</div>
+				
+				<div class="row">
+				<input type="button" name="a4" value="4" onClick="calcNumbers(a4.value)">
+				  <input type="button" name="a5" value="5" onClick="calcNumbers(a5.value)">
+				  <input type="button" name="a6" value="6" onClick="calcNumbers(a6.value)">
+				  <input type="button" name="suba" value="-" onClick="calcNumbers(suba.value)">
+				</div>
+				
+				<div class="row">
+				<input type="button" name="a1" value="1" onClick="calcNumbers(a1.value)">
+				  <input type="button" name="a2" value="2" onClick="calcNumbers(a2.value)">
+				  <input type="button" name="a3" value="3" onClick="calcNumbers(a3.value)">
+				  <input type="button" name="mula" value="*" onClick="calcNumbers(mula.value)">
+				</div>
+				
+				<div class="row">
+				<input type="button" name="ba" value="0" onClick="calcNumbers(ba.value)">
+				  <input type="button" name="pota" value="." onClick="calcNumbers(pota.value)">
+				  <input type="button" name="diva" value="/" onClick="calcNumbers(diva.value)">
+				  <input type="button" class="red" value="=" onClick="displayResult.value=eval(displayResult.value)">
+				</div>
+			</div>
+		
+		</form>
+	</div>
+</body>
+	
+</html>
